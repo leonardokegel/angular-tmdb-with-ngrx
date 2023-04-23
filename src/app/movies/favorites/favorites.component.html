@@ -1,0 +1,5 @@
+<div style="margin: 2rem" *ngFor="let movie of favorites$ | async">
+  <h3>{{ movie.title }}</h3>
+  <img style="display: flex; margin-bottom: 1rem;" [src]="movie?.image_full_url" width="150" height="150" alt="">
+  <button (click)="removeMovie(movie)">Remover dos favoritos</button>
+</div>

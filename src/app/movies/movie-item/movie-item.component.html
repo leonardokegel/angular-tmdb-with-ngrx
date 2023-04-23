@@ -1,0 +1,7 @@
+<div>
+  <h3>{{ movie?.title }}</h3>
+  <img [src]="movie?.image_full_url" width="150" height="150" alt="">
+  <p>{{ movie?.overview }}</p>
+  <button style="display: flex; margin-bottom: 1rem;" (click)="addMovie()">Adicionar aos favoritos</button>
+  <button (click)="removeMovie()">Remover dos favoritos</button>
+</div>
